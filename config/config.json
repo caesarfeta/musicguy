@@ -1,0 +1,40 @@
+{
+	title: 'John Farone',
+	sections: {
+		intro: 0,
+		video: 1,
+		audio: 2,
+		shows: 3
+	},
+	intro: {
+		bg: 'img/file-01.jpg'
+	},
+	video: {
+		bg: 'img/file-02.jpg',
+		urls: [
+		
+		]
+	},
+	audio: {
+		bg: 'img/file-03.jpg',
+		urls: [
+			
+		]
+	}
+	shows: {
+		bg: 'img/file-04.jpg',
+		info: [
+			{
+				year: 2013,
+				month: 12,
+				day: 27,
+				time: '6pm',
+				venue: 'Madison Square Garden',
+				address: '3000 Park Place',
+				city: 'New York',
+				state: 'New York',
+				country: 'USA'
+			}
+		]
+	}
+}
