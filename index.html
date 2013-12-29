@@ -10,7 +10,15 @@
 	<link href="css/site.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<section id="intro" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);">
+	<section id="extra-info">
+		<div id="panel">
+			<a class="link" href="#audio">Music</a>
+			<a class="link" href="#video">Video</a>
+			<a class="link" href="#shows">Upcoming Shows</a>
+		</div>
+	</section>
+	
+	<section id="intro">
 		<div class="row">
 			<div class="small-12 columns">
 			<h1>JOHN FARONE</h1>
@@ -20,19 +28,46 @@
 	
 	<section id="audio">
 		<div class="row">
-			<div class="small-12 columns text-center">
+			<div class="small-12 columns centered">
 		<iframe style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=3895590938/size=small/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="http://johnfaraone.bandcamp.com/album/houses">Houses by John Faraone</a></iframe>
 			</div>
 		</div>
 	</section>
 
-	<section id="video" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%);">
+	<section id="video">
+		<div class="wrap">
+			<div class="row">
+				<div class="small-12 columns">
+					<iframe width="100%" height="480" src="//www.youtube.com/embed/QJPTcaRo9qo" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
 	</section>
 	
-	<section id="shows" data-_box-200p="transform:translate(0,100%);" data-_box-300p="transform:translate(0,0%);">
+	<section id="shows">
 		<div class="row">
 			<div class="small-12 columns">
 				<h2>Upcoming Shows</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-4 columns">
+				<div class="show">
+					<h3>Saturday December 27, 2013</h3>
+					<h4>8PM</h4>
+				</div>
+			</div>
+			<div class="small-4 columns">
+				<div class="show">
+					<h3>Saturday December 27, 2013</h3>
+					<h4>8PM</h4>
+				</div>
+			</div>
+			<div class="small-4 columns">
+				<div class="show">
+					<h3>Saturday December 27, 2013</h3>
+					<h4>8PM</h4>
+				</div>
 			</div>
 		</div>
 		
@@ -44,6 +79,7 @@
 	<script type="text/javascript" src="js/third-party/foundation-5.0.2.custom/js/foundation.min.js"></script>
 	<script type="text/javascript" src="js/third-party/skrollr/dist/skrollr.min.js"></script>
 	<script type="text/javascript">
+	/*
 	skrollr.init({
 		constants: {
 			//fill the box for a "duration" of 150% of the viewport (pause for 150%)
@@ -51,6 +87,7 @@
 			box: 100
 		}
 	});
+	*/
 	</script>
 </body>
 </html>
