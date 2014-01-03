@@ -1,3 +1,6 @@
 [submodule "js/third-party/skrollr"]
 	path = js/third-party/skrollr
 	url = https://github.com/Prinzhorn/skrollr
+[submodule "js/switchar"]
+	path = js/switchar
+	url = https://github.com/caesarfeta/switchar
