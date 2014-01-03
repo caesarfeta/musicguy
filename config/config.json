@@ -1,10 +1,11 @@
 {
-	title: 'John Farone',
+	title: 'John Faraone',
+	subtitle: 'singer & songwriter',
 	sections: {
 		intro: 0,
 		video: 1,
 		audio: 2,
-		shows: 3
+		events: 3
 	},
 	intro: {
 		bg: 'img/file-01.jpg'
@@ -17,11 +18,13 @@
 	},
 	audio: {
 		bg: 'img/file-03.jpg',
-		urls: [
-			
+		releases: [
+			{
+				
+			}
 		]
 	}
-	shows: {
+	events: {
 		bg: 'img/file-04.jpg',
 		info: [
 			{

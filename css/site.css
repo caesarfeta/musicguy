@@ -8,7 +8,9 @@
 	padding: 20px 40px;
 	margin-bottom: 10px;
 }
-
+p, a {
+	font-family: 'Georgia', serif;
+}
 html, body {
 	width:100%;
 	height:100%;
@@ -40,12 +42,7 @@ section#extra-info {
 section#extra-info .link {
 	display: inline-block;
 	padding: 10px;
-	color: #F9F9F9;
-}
-
-section#intro {
-	padding-top: 120px;
-	background-image:url(http://placekitten.com/800/600?image=1);
+	color: #AAA;
 }
 
 h1, h2, h3, h4, h5 {
@@ -53,31 +50,23 @@ h1, h2, h3, h4, h5 {
 	font-weight: normal;
 }
 
-h1, h2 {
-	color: #d9d9d9;
+section#intro h1,
+section#intro h2 {
+	text-align: center;
+	color: #AAA;
+	margin:0;
+	padding:0;
 }
 
-section#intro h1 {}
-
-section#video {
-	background-image:url(http://placekitten.com/800/600?image=2);
+section#events h2 {
+	padding-left: 25px;
+	font-size: 25px;
+	color: #666;
 }
 
-section#video .wrap {
-	background-color: rgba( 0,0,0,0.6 );
-}
-
-section#audio {
-	padding: 10px;
-	background-color: rgba( 0,0,0,0.6 );
-}
-
-section#shows {
-	background-image:url(http://placekitten.com/800/600?image=4);
-}
-
-section#shows .show {
-	background-color: rgba( 255, 255, 255, 0.9 );
+section#events .event {
+	background-color: rgba(0,0,0,0.8);
+	color: #AAA;
 	padding: 20px;
 	margin-bottom: 10px;
 }
