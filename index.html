@@ -4,7 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>{%title%}</title>
-	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	
+
 	<link href="js/third-party/foundation-5.0.2.custom/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="js/third-party/foundation-5.0.2.custom/css/foundation.min.css" rel="stylesheet" type="text/css">
 	<link href="css/site.css" rel="stylesheet" type="text/css">
@@ -55,8 +61,7 @@
 					<div class="block">
 						<div class="row">
 							<div class="small-12 medium-12 large-12 columns">
-								<h1>JOHN FARAONE</h1>
-								<h2>singer &amp; songwriter</h2>
+								<h1>John Faraone</h1>
 							</div>
 						</div>
 						<div class="row">
@@ -77,7 +82,7 @@
 		<div class="wrap">
 			<div class="row">
 				<div class="small-12 medium-6 large-4 columns centered">
-					<iframe style="border: 0; width: 350px; height: 470px;" src="http://bandcamp.com/EmbeddedPlayer/album=3895590938/size=large/bgcol=ffffff/linkcol=e99708/notracklist=true/transparent=true/" seamless><a href="http://johnfaraone.bandcamp.com/album/houses">Houses by John Faraone</a></iframe>
+					<iframe style="border: 0; width: 350px; height: 470px;" src="http://bandcamp.com/EmbeddedPlayer/album=3895590938/size=large/bgcol=ffffff/linkcol=e99708/notracklist=true/t=2/transparent=true/" seamless><a href="http://johnfaraone.bandcamp.com/album/houses">Houses by John Faraone</a></iframe>
 				</div>
 			</div>
 		</div>
@@ -101,22 +106,46 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="small-12 medium-8 large-8 columns left">
+				<div id="event-scroll" class="small-12 medium-6 large-6 columns left">
 					<div class="row">
 						<div class="small-12 columns">
 							<div class="event">
-								<p>Saturday, December 27 2013</p>
-								<p>8PM</p>
-								<p>Providence, Rhode Island</p>
-								<p>The Balloon</p>
-								<p>123 Weybosset Street</p>
-								<p>Performers</p>
-								<ul>
-									<li>Geek</li>
-									<li>John Farone</li>
-									<li>Nerd Brigade</li>
-									<li>The Kung-Fu Hormones</li>
-								</ul>
+								<div class="time">
+									<p>Saturday -- December 27, 2013</p>
+									<p>8pm</p>
+								</div>
+								<div class="place">
+									<p>Providence, Rhode Island</p>
+									<p>The Balloon</p>
+									<p>123 Weybosset Street</p>
+								</div>
+								<div class="performers">
+									<ul>
+										<li>Geek</li>
+										<li>John Farone</li>
+										<li>Nerd Brigade</li>
+										<li>The Kung-Fu Hormones</li>
+									</ul>
+								</div>
+							</div>
+							<div class="event">
+								<div class="time">
+									<p>Saturday -- December 27, 2013</p>
+									<p>8pm</p>
+								</div>
+								<div class="place">
+									<p>Providence, Rhode Island</p>
+									<p>The Balloon</p>
+									<p>123 Weybosset Street</p>
+								</div>
+								<div class="performers">
+									<ul>
+										<li>Geek</li>
+										<li>John Farone</li>
+										<li>Nerd Brigade</li>
+										<li>The Kung-Fu Hormones</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -129,17 +158,21 @@
 	<script type="text/javascript" src="js/third-party/foundation-5.0.2.custom/js/jquery.js"></script>
 	<script type="text/javascript" src="js/third-party/foundation-5.0.2.custom/js/modernizr.js"></script>
 	<script type="text/javascript" src="js/third-party/foundation-5.0.2.custom/js/foundation.min.js"></script>
-	<script type="text/javascript" src="js/third-party/skrollr/dist/skrollr.min.js"></script>
 	<script type="text/javascript">
-	/*
-	skrollr.init({
-		constants: {
-			//fill the box for a "duration" of 150% of the viewport (pause for 150%)
-			//adjust for shorter/longer pause
-			box: 100
-		}
-	});
-	*/
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			  }
+			}
+		  });
+		});
 	</script>
 </body>
 </html>

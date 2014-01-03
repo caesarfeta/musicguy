@@ -8,7 +8,7 @@ html, body {
 	height:100%;
 }
 
-p, a {
+p, a, li {
 	font-family: 'Georgia', serif;
 }
 
@@ -19,10 +19,6 @@ a {
 
 a:hover {
 	color: #E9A718;
-}
-
-body {
-	font-family:sans-serif;
 }
 
 body > section {
@@ -45,6 +41,8 @@ section#extra-info {
 }
 
 section#extra-info .link {
+	font-family: 'Courgette', cursive;
+	font-style: normal;
 	display: inline-block;
 	padding: 10px;
 	color: #C07C05;
@@ -54,8 +52,14 @@ section#extra-info .link:hover {
 	color: #C0AC35;
 }
 
+@media (max-width: 350px) {
+	section#extra-info {
+		padding: 0 0 0 20px
+	}
+}
+
 h1, h2, h3, h4, h5 {
-	font-family: 'Georgia', serif;
+	font-family: 'Courgette', cursive;
 	font-weight: normal;
 }
 
@@ -68,11 +72,12 @@ section#intro h2 {
 	line-height: 1em;
 }
 section#intro h1 {
+	padding-top: 20px;
 	color: #333;
+	margin-bottom: 40px;
 }
 section#intro h2 {
 	font-style: italic;
-	margin-bottom: 40px;
 	font-size: 20px;
 }
 
@@ -95,15 +100,32 @@ section#events h2 {
 }
 
 .event {
-	background-color: rgba(0,0,0,0.8);
 	color: #AAA;
 	padding: 20px;
 	margin-bottom: 10px;
 }
 
-.block, .event {
+.event p {
+	margin: 0;
+	padding: 0;
+}
+
+.event div {
+	margin-bottom: 5px;
+	padding: 10px;
+}
+
+.block {
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 	border-radius: 2px; /* future proofing */
 	-khtml-border-radius: 2px; /* for old Konqueror browsers */
+}
+
+#event-scroll {
+	padding: 10px;
+	background-color: rgba( 32,32,32,0.8 );
+	max-height: 500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
