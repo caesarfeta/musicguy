@@ -96,8 +96,10 @@
 	<section id="events">
 		<div class="wrap">
 			<div class="row">
-				<div class="small-12 columns">
+				<div id="event-controls" class="small-12 columns">
 					<h2>Events</h2>
+					<a id="prev">&lt;</a>
+					<a id="next">&gt;</a>
 				</div>
 			</div>
 			<div class="row">
@@ -168,7 +170,19 @@
 		  });
 		});
 		$(document).ready( function(){
-			var switchar = $('#switchar').switchar().data('#switchar');
+			var switchar = $('#switchar').switchar({
+				speed: 0
+			}).data('#switchar');
+			
+			$( '#next' ).click( function( _e ){
+				console.log( 'next' );
+				switchar.next();
+				_e.preventDefault();
+			});
+			$( '#prev' ).click( function( _e ){
+				switchar.prev();
+				_e.preventDefault();
+			})
 		});
 	</script>
 </body>

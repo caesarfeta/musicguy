@@ -73,7 +73,7 @@ section#intro h2 {
 }
 section#intro h1 {
 	padding-top: 20px;
-	color: #333;
+	color: #EDD1BC;
 	margin-bottom: 40px;
 }
 section#intro h2 {
@@ -93,7 +93,7 @@ section#events h2 {
 
 
 .block {
-	background-color: rgba( 255,255,255,0.9 );
+	background-color: rgba( 0,0,0,0.7 );
 	padding: 20px;
 	margin-bottom: 10px;
 }
@@ -124,4 +124,14 @@ section#events h2 {
 
 #social {
 	text-align: center;
+}
+
+#event-controls h2 {
+	padding-right: 10px;
+	display: inline-block;
+}
+#event-controls a {
+	display: inline-block;
+	padding: 5px;
+	font-size: 28px;
 }
