@@ -1,43 +1,30 @@
 {
-	title: 'John Faraone',
-	subtitle: 'singer & songwriter',
-	sections: {
-		intro: 0,
-		video: 1,
-		audio: 2,
-		events: 3
-	},
-	intro: {
-		bg: 'img/file-01.jpg'
-	},
-	video: {
-		bg: 'img/file-02.jpg',
-		urls: [
-		
-		]
-	},
-	audio: {
-		bg: 'img/file-03.jpg',
-		releases: [
-			{
-				
+	"title": "John Faraone",
+	"subtitle": "singer & songwriter",
+	"sections": {
+		"intro": {
+			"padding": 500,
+			"img": "img/file-01.jpg",
+			"name": "John Faraone",
+			"links": {
+				"YouTube": "http://www.youtube.com/user/JohnFaraone",
+				"Instagram": "http://instagram.com/johnfaraone",
+				"Facebook": "https://www.facebook.com/john.faraone.58",
+				"Bandcamp": "http://johnfaraone.bandcamp.com"
 			}
-		]
-	}
-	events: {
-		bg: 'img/file-04.jpg',
-		info: [
-			{
-				year: 2013,
-				month: 12,
-				day: 27,
-				time: '6pm',
-				venue: 'Madison Square Garden',
-				address: '3000 Park Place',
-				city: 'New York',
-				state: 'New York',
-				country: 'USA'
-			}
-		]
+		},
+		"video": {
+			"padding": 200,
+			"img": "img/file-02.jpg"
+		},
+		"audio": {
+			"padding": 300,
+			"img": "img/file-03.jpg"
+		},
+		"events": {
+			"padding": 200,
+			"img": "img/file-04.jpg",
+			"embed": ""
+		}
 	}
 }
