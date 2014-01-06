@@ -102,6 +102,7 @@
 			<div class="row">
 				<div id="event-controls" class="small-12 columns">
 					<h2>Events</h2>
+					<a id="calendar"><img src="img/icon/calendar.png"></a>
 					<a id="prev">&lt;</a>
 					<a id="next">&gt;</a>
 				</div>
@@ -127,7 +128,7 @@
 								<p>{{ event.time }}</p>
 							</div>
 							<div class="place">
-							{% if event.country is defined %}
+							{% if event.country is defined and event.country != 'USA' %}
 								<p>{{ event.country }}</p>
 							{% endif %}
 								<p>{{ event.city }}, {{ event.state }}</p>
@@ -185,6 +186,10 @@
 				switchar.prev();
 				_e.preventDefault();
 			});
+			$( '#calendar' ).click( function( _e ){
+				switchar.goTo( 0 );
+				_e.preventDefault();
+			})
 			$( 'a.summary' ).click( function( _e ){
 				var id = parseInt( $(this).attr( 'id' ).replace( 'click_', '' ) );
 				switchar.goTo( id );

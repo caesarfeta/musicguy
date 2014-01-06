@@ -102,6 +102,7 @@
 			<div class="row">
 				<div id="event-controls" class="small-12 columns">
 					<h2>Events</h2>
+					<a id="calendar"><img src="img/icon/calendar.png"></a>
 					<a id="prev">&lt;</a>
 					<a id="next">&gt;</a>
 				</div>
@@ -134,8 +135,6 @@
 							</div>
 							<div class="place">
 							
-								<p>USA</p>
-							
 								<p>Providence, Rhode Island</p>
 								<p>The Balloon</p>
 								<p>123 Weybosset Street</p>
@@ -164,8 +163,6 @@
 							</div>
 							<div class="place">
 							
-								<p>USA</p>
-							
 								<p>Providence, Rhode Island</p>
 								<p>The Glass Ceiling</p>
 								<p>123 Main Street</p>
@@ -193,8 +190,6 @@
 								<p>8pm</p>
 							</div>
 							<div class="place">
-							
-								<p>USA</p>
 							
 								<p>Boston, Massachusetts</p>
 								<p>The Silo</p>
@@ -257,6 +252,10 @@
 				switchar.prev();
 				_e.preventDefault();
 			});
+			$( '#calendar' ).click( function( _e ){
+				switchar.goTo( 0 );
+				_e.preventDefault();
+			})
 			$( 'a.summary' ).click( function( _e ){
 				var id = parseInt( $(this).attr( 'id' ).replace( 'click_', '' ) );
 				switchar.goTo( id );
