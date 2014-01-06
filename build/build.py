@@ -4,6 +4,11 @@ import buildLib
 import os
 import pprint
 import datetime
+import calendar
+import operator
+
+def getUnix( _pyt ):
+	return _pyt['unix']
 
 def eventConfigs():
 	events = os.listdir( '../config/events' )
@@ -21,9 +26,11 @@ def eventConfigs():
 		pyt['month'] = d.strftime('%B')
 		pyt['day'] = d.day
 		pyt['weekday'] = d.strftime('%A')
+		pyt['unix'] = calendar.timegm( d.utctimetuple() )
 		out.append( pyt )
 		
-	return out
+	# Return all the events sorted by date
+	return sorted( out, key=getUnix )
 	
 def mainConfig():
 	return buildLib.jsonFileToPython( '../config/config.json' )

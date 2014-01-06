@@ -103,6 +103,7 @@ section#events h2 {
 	color: #AAA;
 	padding: 20px;
 	margin-bottom: 10px;
+	min-height: 385px;
 }
 
 .event p {
@@ -134,4 +135,11 @@ section#events h2 {
 	display: inline-block;
 	padding: 5px;
 	font-size: 28px;
+}
+.event .summary {
+	display: block;
+	margin-bottom: 20px;
+}
+.bigger {
+	font-size: 120%;
 }
